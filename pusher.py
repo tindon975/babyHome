@@ -17,7 +17,8 @@ class Pusher:
                 'msgtype': "news",
                 'agentid': 1000002,
                 'news': {
-                    'articles': [
+                    'articles':
+                    [
                         {
                         'title': "晚上好呀大宝贝！",
                         'description': f"今天是{dateSuggest.today.month}月{dateSuggest.today.day}日 {dateSuggest.week}\n"
@@ -25,7 +26,8 @@ class Pusher:
                             + f"今天白天天气{weatherSuggest.weather.weather_day}, 晚上天气{weatherSuggest.weather.weather_night}\n"
                             + f"今天是我们恋爱的{dateSuggest.anniversary_of_love_pass}天\n"
                             + f"距离宝贝生日还有{dateSuggest.birthday_countdown}天呢\n"
-                            + f"还有{dateSuggest.exam_countdown}天就要上战场啦"
+                            + f"还有{dateSuggest.exam_countdown}天就要上战场啦",
+                        "picurl": 'http://42.192.223.150:4000/cute.jpg'
                         }
                     ]
                 }
